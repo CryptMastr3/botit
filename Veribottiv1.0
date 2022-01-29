@@ -1,0 +1,189 @@
+import pydirectinput
+import time
+
+
+def start():
+    pydirectinput.moveTo(960, 570)
+    time.sleep(1)
+    pydirectinput.click(960, 570, button='left')
+    time.sleep(8)
+    pydirectinput.click(960, 400, button='left')
+    time.sleep(2)
+    pydirectinput.click(960, 570, button='left')
+
+    repeat()
+
+
+def korttipoydalle():
+    pydirectinput.moveTo(960, 800)
+    time.sleep(1)
+    pydirectinput.click(960, 800, button='left')
+    pydirectinput.click(960, 800, button='left')
+
+def valitseslayer():
+    pydirectinput.moveTo(920, 470)
+    time.sleep(1)
+    pydirectinput.click(920, 470, button='left')
+    pydirectinput.click(920, 470, button='left')
+
+def ammuslayer():
+    pydirectinput.moveTo(920, 470)
+    time.sleep(1)
+    pydirectinput.moveTo(1050, 640)
+    time.sleep(1)
+    pydirectinput.click(1050, 640, button='left')
+    pydirectinput.click(1050, 640, button='left')
+
+def pelionloppu():
+    #Quitin pressaus
+    pydirectinput.moveTo(950, 540)
+    time.sleep(1)
+    pydirectinput.click(950, 540, button='left')
+    pydirectinput.click(950, 540, button='left')
+    time.sleep(1)
+    valitseslayer()
+    time.sleep(1)
+    ammuslayer()
+    time.sleep(1)
+    korttipoydalle()
+    time.sleep(13)
+    # expat, rewardit, jne rank, kaikki omassa setissa, eka alkaa expoista
+    pydirectinput.moveTo(950, 715)
+    time.sleep(3)
+    pydirectinput.click(950, 715, button='left')
+    pydirectinput.click(950, 715, button='left')
+    time.sleep(1)
+    valitseslayer()
+    time.sleep(1)
+    ammuslayer()
+    time.sleep(1)
+    korttipoydalle()
+    time.sleep(5)
+    # rewards tulee
+    pydirectinput.moveTo(950, 700)
+    time.sleep(1)
+    pydirectinput.click(950, 700, button='left')
+    pydirectinput.click(950, 700, button='left')
+    time.sleep(5)
+    pydirectinput.click(950, 700, button='left')
+    pydirectinput.click(950, 700, button='left')
+    time.sleep(5)
+    pydirectinput.click(950, 700, button='left')
+    pydirectinput.click(950, 700, button='left')
+    time.sleep(1)
+    valitseslayer()
+    time.sleep(1)
+    ammuslayer()
+    time.sleep(1)
+    korttipoydalle()
+    time.sleep(5)
+    # rank
+    pydirectinput.moveTo(960, 730)
+    pydirectinput.click(960, 730, button='left')
+    pydirectinput.click(960, 730, button='left')
+    time.sleep(1)
+    valitseslayer()
+    time.sleep(1)
+    ammuslayer()
+    time.sleep(1)
+    korttipoydalle()
+    time.sleep(4)
+    # Deny gather flux
+    pydirectinput.moveTo(950, 800)
+    pydirectinput.click(950, 800, button='left')
+    pydirectinput.click(950, 800, button='left')
+    time.sleep(1)
+    # uusi queue
+    pydirectinput.moveTo(960, 570)
+    time.sleep(1)
+    pydirectinput.click(960, 570, button='left')
+    time.sleep(1)
+    # in case jos queue failaa
+    pydirectinput.moveTo(960, 400)
+    time.sleep(1)
+    pydirectinput.click(960, 400, button='left')
+    time.sleep(8)
+    pydirectinput.click(960, 570, button='left')
+
+
+def repeat():
+    for i in range(50000000):
+        pelionloppu() #54s
+        valitseslayer()
+        time.sleep(3)
+        ammuslayer()
+        time.sleep(1)
+        pydirectinput.click(920, 520, button='left')  # incase quit
+        pydirectinput.click(920, 520, button='left')  # incase quit
+        korttipoydalle()
+        korttipoydalle()
+        valitseslayer()
+        time.sleep(5)
+        ammuslayer()
+        time.sleep(2)
+        korttipoydalle()
+        korttipoydalle()
+        valitseslayer()
+        time.sleep(5)
+        pydirectinput.click(920, 520, button='left')  # incase quit
+        pydirectinput.click(920, 520, button='left')  # incase quit
+        ammuslayer()
+        time.sleep(2)
+        korttipoydalle()
+        korttipoydalle()
+        time.sleep(3)
+        time.sleep(2)
+        valitseslayer()
+        time.sleep(2)
+        ammuslayer()
+        time.sleep(2)
+        korttipoydalle()
+        korttipoydalle()
+        time.sleep(1)
+        ammuslayer()
+        time.sleep(2)
+        valitseslayer()
+        time.sleep(2)
+        korttipoydalle()
+        korttipoydalle()
+        time.sleep(3)
+        ammuslayer()
+        time.sleep(2)
+        pydirectinput.click(920, 520, button='left')  # incase quit
+        pydirectinput.click(920, 520, button='left')  # incase quit
+        korttipoydalle()
+        korttipoydalle()
+        ammuslayer()
+        time.sleep(2)
+        valitseslayer()
+        time.sleep(5)
+        korttipoydalle()
+        korttipoydalle()
+        time.sleep(5)
+        ammuslayer()
+        time.sleep(2)
+        valitseslayer()
+        time.sleep(3)
+        korttipoydalle()
+        korttipoydalle()
+        ammuslayer()
+        time.sleep(5)
+        pydirectinput.click(920, 520, button='left')  # incase quit
+        pydirectinput.click(920, 520, button='left')  # incase quit
+        korttipoydalle()
+        korttipoydalle()
+        time.sleep(5)
+        valitseslayer()
+        time.sleep(2)
+        ammuslayer()
+        time.sleep(5)
+        korttipoydalle()
+        korttipoydalle()
+
+
+
+def main():
+    time.sleep(3)
+    start()
+
+main()
